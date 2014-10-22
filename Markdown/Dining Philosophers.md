@@ -5,7 +5,7 @@ The Dining Philosophers
 Hacking And Learning
 --------------------------
 
-The Dining Philosphers is the Unviersity of Pennsylvania's official COmputer Science Club. This is teh home of the Hacking and Learning Team on the DP that focuses on spreading practical coding education and fostering the hacker community. This website contains a lot of the resources we use to teach code and we're constantly working to make things better. We hope that eventually this will become a great place to find all the tools you need to pick up any skill you might need to build something real.
+The Dining Philosphers is the Unviersity of Pennsylvania's official Computer Science Club. This is teh home of the Hacking and Learning Team on the DP that focuses on spreading practical coding education and fostering the hacker community. This website contains a lot of the resources we use to teach code and we're constantly working to make things better. We hope that eventually this will become a great place to find all the tools you need to pick up any skill you might need to build something real.
 
 > These materials have been developed by a lot of people over time and these people are credited with their contributions along with the materials they created.
 
@@ -36,7 +36,9 @@ Quick start advice at hackathons
 
 We're also going to be building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. Check back soon for updates on this.
 
-<div class="footer"><p>&copy; Dining Philosophers 2014. Page created by <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>. Workshops designed by <a href="http://github.com/bclay/">Brynn Claypoole</a>, <a href="http://lewisjellis.com/">Lewis Ellis</a> and <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>.</div>
+[See all hackathon guides here.](http://dinphil.github.io/hackathons)
+
+<div class="footer"><p>&copy; Dining Philosophers 2014. Page created by <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>.</div>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="assets/js/nav.js"></script>
