@@ -5,7 +5,7 @@ The Dining Philosophers
 Hacking And Learning
 --------------------------
 
-The Dining Philosphers is the Unviersity of Pennsylvania's official Computer Science Club. This is teh home of the Hacking and Learning Team on the DP that focuses on spreading practical coding education and fostering the hacker community. This website contains a lot of the resources we use to teach code and we're constantly working to make things better. We hope that eventually this will become a great place to find all the tools you need to pick up any skill you might need to build something real.
+The Dining Philosphers is the Unviersity of Pennsylvania's official Computer Science Club. This is the home of the Hacking and Learning Team on the DP that focuses on spreading practical coding education and fostering the hacker community. This website contains a lot of the resources we use to teach code and we're constantly working to make things better. We hope that eventually this will become a great place to find all the tools you need to pick up any skill you might need to build something real.
 
 > These materials have been developed by a lot of people over time and these people are credited with their contributions along with the materials they created.
 
