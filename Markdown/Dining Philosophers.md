@@ -16,7 +16,7 @@ Code Weekend <a id="cw-section"></a>
 A weekend crash course in building webapps with Node.JS
 ------------------------------------
 
-The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecented interset with over 500 students singing up for the weekend's workshops. Split into 4 highly interactive and mentored workshops, Code Weekend taught students to build a fully functioning Node.JS app that used 3rd party APIs and a MongoDB database in jsut two days. Code Weekend will be coming back improved in the Spring 2015 semester with all the things we learned from the first iteration.
+The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecented interset with over 500 students singing up for the weekend's workshops. Split into 4 highly interactive and mentored workshops, Code Weekend taught students to build a fully functioning Node.JS app that used 3rd party APIs and a MongoDB database in just two days. Code Weekend will be coming back improved in the Spring 2015 semester with all the things we learned from the first iteration.
 
 [See the full Code Weekend website here.](http://dinphil.github.io/code-weekend)
 
@@ -25,7 +25,7 @@ Code Camp <a id="cc-section"></a>
 Workshops to build fundamental coding skills
 --------------------------------------------
 
-Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get rhoguh the problems they face in this highly interactive workshop. The first Code Camp is scheduled for October 25th on Git and Command Line.
+Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get through the problems they face in this highly interactive workshop.
 
 [See all Code Camp Materials here.](http://dinphil.github.io/code-camp)
 
@@ -34,11 +34,11 @@ Hackathons <a id="hack-section"></a>
 Quick start advice at hackathons
 -------------------------------
 
-We're also going to be building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. Check back soon for updates on this.
+We're also building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. These will also involve projects tutorials that are great places to start learning new technologies whether you're at a hackathon or not.
 
 [See all hackathon guides here.](http://dinphil.github.io/hackathons)
 
-<div class="footer"><p>&copy; Dining Philosophers 2014. Page created by <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>.</div>
+<div class="footer"><p>&copy; Dining Philosophers 2015. Page created by <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>.</div>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="assets/js/nav.js"></script>
@@ -50,10 +50,5 @@ We're also going to be building up a directory of quick ways to pick up new skil
         minFont   : 16,
         maxFont   : 65,
         fontRatio : 40
-    });
-</script>
-<script>
-    $(window).load(function(){
-        $('.loading').fadeOut('200');
     });
 </script>

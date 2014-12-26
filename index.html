@@ -13,21 +13,23 @@ body {
 h1 {
   font-weight: 400;
   font-size: 2.5em;
-  border: none; }
+  border: none;
+  margin: 0.2em 0em; }
 
 h2 {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
   font-size: 1.5em;
   border: none; }
 
 h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.3em;
   color: #972e2e; }
 
 h4 {
-  font-weight: 300;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 p, ol, ul {
@@ -112,7 +114,6 @@ body {
     color: #111111;
     font-size: 1em;
     display: block;
-    text-align: justify;
     padding: 10px;
     font-weight: 300;
    }
@@ -126,8 +127,7 @@ body {
       color: #972e2e;
     }
    em{
-    background: #972e2e;
-    color: white;
+    color: #972e2e;
     padding: 0.17em;
     font-weight: 300;
     font-size: 1em;
@@ -135,7 +135,12 @@ body {
    }
    blockquote{
     margin: 20px 10%;
+    border-left: 2vw solid #004E78;
    }
+    blockquote p {
+      color: #14587D;
+      margin: 0;
+    }
    ol, ul {
     margin: 20px 12%;
    }
@@ -149,13 +154,13 @@ pre{
   text-align: left;
   font-weight: 300;
   font-size: 0.8em;
-  background: #2e4b97;
   margin: 0;
-  overflow: scroll;
+  word-wrap: break-word;
+  background: #004E78;
 }
   code{
-    background: #2e4b97;
-    color: white;
+    background: #004E78;
+    color: #66BEED;
     font-size: 0.8em;
     padding: 0.1em;
     font-weight: 300;
@@ -220,26 +225,26 @@ img.full-img{
 </style><title>Dining Philosophers</title></head><body><article class="markdown-body"><div class="hidden"><meta property="og:image" content="http://the-dining-philosophers.github.io/code-weekend/assets/img/logo.png"><link rel="shortcut icon" href="assets/images/favicon.png"><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"><link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' type='text/css'></div>
 
 <p><img class="full-img" src="assets/img/logo.png"><div class="nav-items"><div class="nav-item" id="cw-menu">Code Weekend</div><div class="nav-item" id="cc-menu">Code Camp</div><div class="nav-item" id="hack-menu">Hackathons</div></div></p>
-<h1 id="the-dining-philosophers"><a name="user-content-the-dining-philosophers" href="#the-dining-philosophers" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>The Dining Philosophers</h1>
-<h2 id="hacking-and-learning"><a name="user-content-hacking-and-learning" href="#hacking-and-learning" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Hacking And Learning</h2>
+<h1 id="the-dining-philosophers"><a name="user-content-the-dining-philosophers" href="#the-dining-philosophers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The Dining Philosophers</h1>
+<h2 id="hacking-and-learning"><a name="user-content-hacking-and-learning" href="#hacking-and-learning" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hacking And Learning</h2>
 <p>The Dining Philosphers is the Unviersity of Pennsylvania&rsquo;s official Computer Science Club. This is the home of the Hacking and Learning Team on the DP that focuses on spreading practical coding education and fostering the hacker community. This website contains a lot of the resources we use to teach code and we&rsquo;re constantly working to make things better. We hope that eventually this will become a great place to find all the tools you need to pick up any skill you might need to build something real.</p>
 <blockquote>
 <p>These materials have been developed by a lot of people over time and these people are credited with their contributions along with the materials they created.</p>
 </blockquote>
 <p>Below are short descriptions on what materials we have available already and links to them. This will build up over time, so forgvie us if some of them are still works in progress.</p>
-<h1 id="code-weekend"><a name="user-content-code-weekend" href="#code-weekend" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Code Weekend <a id="cw-section"></a></h1>
-<h2 id="a-weekend-crash-course-in-building-webapps-with-nodejs"><a name="user-content-a-weekend-crash-course-in-building-webapps-with-nodejs" href="#a-weekend-crash-course-in-building-webapps-with-nodejs" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>A weekend crash course in building webapps with Node.JS</h2>
-<p>The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecented interset with over 500 students singing up for the weekend&rsquo;s workshops. Split into 4 highly interactive and mentored workshops, Code Weekend taught students to build a fully functioning Node.JS app that used 3rd party APIs and a MongoDB database in jsut two days. Code Weekend will be coming back improved in the Spring 2015 semester with all the things we learned from the first iteration.</p>
+<h1 id="code-weekend"><a name="user-content-code-weekend" href="#code-weekend" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Code Weekend <a id="cw-section"></a></h1>
+<h2 id="a-weekend-crash-course-in-building-webapps-with-nodejs"><a name="user-content-a-weekend-crash-course-in-building-webapps-with-nodejs" href="#a-weekend-crash-course-in-building-webapps-with-nodejs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>A weekend crash course in building webapps with Node.JS</h2>
+<p>The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecented interset with over 500 students singing up for the weekend&rsquo;s workshops. Split into 4 highly interactive and mentored workshops, Code Weekend taught students to build a fully functioning Node.JS app that used 3rd party APIs and a MongoDB database in just two days. Code Weekend will be coming back improved in the Spring 2015 semester with all the things we learned from the first iteration.</p>
 <p><a href="http://dinphil.github.io/code-weekend">See the full Code Weekend website here.</a></p>
-<h1 id="code-camp"><a name="user-content-code-camp" href="#code-camp" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Code Camp <a id="cc-section"></a></h1>
-<h2 id="workshops-to-build-fundamental-coding-skills"><a name="user-content-workshops-to-build-fundamental-coding-skills" href="#workshops-to-build-fundamental-coding-skills" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Workshops to build fundamental coding skills</h2>
-<p>Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get rhoguh the problems they face in this highly interactive workshop. The first Code Camp is scheduled for October 25th on Git and Command Line.</p>
+<h1 id="code-camp"><a name="user-content-code-camp" href="#code-camp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Code Camp <a id="cc-section"></a></h1>
+<h2 id="workshops-to-build-fundamental-coding-skills"><a name="user-content-workshops-to-build-fundamental-coding-skills" href="#workshops-to-build-fundamental-coding-skills" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Workshops to build fundamental coding skills</h2>
+<p>Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get through the problems they face in this highly interactive workshop.</p>
 <p><a href="http://dinphil.github.io/code-camp">See all Code Camp Materials here.</a></p>
-<h1 id="hackathons"><a name="user-content-hackathons" href="#hackathons" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Hackathons <a id="hack-section"></a></h1>
-<h2 id="quick-start-advice-at-hackathons"><a name="user-content-quick-start-advice-at-hackathons" href="#quick-start-advice-at-hackathons" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Quick start advice at hackathons</h2>
-<p>We&rsquo;re also going to be building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. Check back soon for updates on this.</p>
+<h1 id="hackathons"><a name="user-content-hackathons" href="#hackathons" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hackathons <a id="hack-section"></a></h1>
+<h2 id="quick-start-advice-at-hackathons"><a name="user-content-quick-start-advice-at-hackathons" href="#quick-start-advice-at-hackathons" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Quick start advice at hackathons</h2>
+<p>We&rsquo;re also building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. These will also involve projects tutorials that are great places to start learning new technologies whether you&rsquo;re at a hackathon or not.</p>
 <p><a href="http://dinphil.github.io/hackathons">See all hackathon guides here.</a></p>
-<div class="footer"><p>&copy; Dining Philosophers 2014. Page created by <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>.</div>
+<div class="footer"><p>&copy; Dining Philosophers 2015. Page created by <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>.</div>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
@@ -254,11 +259,5 @@ img.full-img{
         minFont   : 16,
         maxFont   : 65,
         fontRatio : 40
-    });
-</script>
-
-<script>
-    $(window).load(function(){
-        $('.loading').fadeOut('200');
     });
 </script></article></body></html>
