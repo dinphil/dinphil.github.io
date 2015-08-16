@@ -3329,7 +3329,9 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #093E62;
+		/*background-color: #093E62;*/
+		background: linear-gradient(#093E62, #062b44);
+		background-repeat: no-repeat;
 		/*background-image: url("../../images/banner.jpg");*/
 		background-position: center center;
 		background-size: cover;
