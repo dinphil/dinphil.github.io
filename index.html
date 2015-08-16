@@ -1,104 +1,160 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><style>.codehilite pre .hll { background-color: #f8eec7 }
-.codehilite pre  { background: #ffffff; color: #333333 }
-.codehilite pre .c { color: #999988; font-style: italic } /* Comment */
-.codehilite pre .err { color: #a61717; background-color: #e3d2d2 } /* Error */
-.codehilite pre .k { font-weight: bold } /* Keyword */
-.codehilite pre .n { color: #333333 } /* Name */
-.codehilite pre .o { font-weight: bold } /* Operator */
-.codehilite pre .cm { color: #999988; font-style: italic } /* Comment.Multiline */
-.codehilite pre .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
-.codehilite pre .c1 { color: #999988; font-style: italic } /* Comment.Single */
-.codehilite pre .cs { color: #999988; font-style: italic } /* Comment.Special */
-.codehilite pre .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
-.codehilite pre .ge { font-style: italic } /* Generic.Emph */
-.codehilite pre .gr { color: #aa0000 } /* Generic.Error */
-.codehilite pre .gh { color: #999999 } /* Generic.Heading */
-.codehilite pre .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
-.codehilite pre .go { color: #888888 } /* Generic.Output */
-.codehilite pre .gp { color: #555555 } /* Generic.Prompt */
-.codehilite pre .gs { font-weight: bold } /* Generic.Strong */
-.codehilite pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.codehilite pre .gt { color: #aa0000 } /* Generic.Traceback */
-.codehilite pre .kc { font-weight: bold } /* Keyword.Constant */
-.codehilite pre .kd { font-weight: bold } /* Keyword.Declaration */
-.codehilite pre .kn { font-weight: bold } /* Keyword.Namespace */
-.codehilite pre .kp { font-weight: bold } /* Keyword.Pseudo */
-.codehilite pre .kr { font-weight: bold } /* Keyword.Reserved */
-.codehilite pre .kt { font-weight: bold } /* Keyword.Type */
-.codehilite pre .m { color: #945277 } /* Literal.Number */
-.codehilite pre .s { color: #df5000 } /* Literal.String */
-.codehilite pre .na { color: #008080 } /* Name.Attribute */
-.codehilite pre .nb { color: #0086b3 } /* Name.Builtin */
-.codehilite pre .nc { color: #445588; font-weight: bold } /* Name.Class */
-.codehilite pre .no { color: #094e99 } /* Name.Constant */
-.codehilite pre .nd { color: #333333 } /* Name.Decorator */
-.codehilite pre .ni { color: #800080 } /* Name.Entity */
-.codehilite pre .ne { color: #990000; font-weight: bold } /* Name.Exception */
-.codehilite pre .nf { color: #945277; font-weight: bold } /* Name.Function */
-.codehilite pre .nl { color: #333333 } /* Name.Label */
-.codehilite pre .nn { color: #555555 } /* Name.Namespace */
-.codehilite pre .nx { color: #333333 } /* Name.Other */
-.codehilite pre .py { color: #333333 } /* Name.Property */
-.codehilite pre .nt { color: #000080 } /* Name.Tag */
-.codehilite pre .nv { color: #008080 } /* Name.Variable */
-.codehilite pre .ow { font-weight: bold } /* Operator.Word */
-.codehilite pre .w { color: #bbbbbb } /* Text.Whitespace */
-.codehilite pre .mb { color: #945277 } /* Literal.Number.Bin */
-.codehilite pre .mf { color: #945277 } /* Literal.Number.Float */
-.codehilite pre .mh { color: #945277 } /* Literal.Number.Hex */
-.codehilite pre .mi { color: #945277 } /* Literal.Number.Integer */
-.codehilite pre .mo { color: #945277 } /* Literal.Number.Oct */
-.codehilite pre .sb { color: #df5000 } /* Literal.String.Backtick */
-.codehilite pre .sc { color: #df5000 } /* Literal.String.Char */
-.codehilite pre .sd { color: #df5000 } /* Literal.String.Doc */
-.codehilite pre .s2 { color: #df5000 } /* Literal.String.Double */
-.codehilite pre .se { color: #df5000 } /* Literal.String.Escape */
-.codehilite pre .sh { color: #df5000 } /* Literal.String.Heredoc */
-.codehilite pre .si { color: #df5000 } /* Literal.String.Interpol */
-.codehilite pre .sx { color: #df5000 } /* Literal.String.Other */
-.codehilite pre .sr { color: #017936 } /* Literal.String.Regex */
-.codehilite pre .s1 { color: #df5000 } /* Literal.String.Single */
-.codehilite pre .ss { color: #8b467f } /* Literal.String.Symbol */
-.codehilite pre .bp { color: #999999 } /* Name.Builtin.Pseudo */
-.codehilite pre .vc { color: #008080 } /* Name.Variable.Class */
-.codehilite pre .vg { color: #008080 } /* Name.Variable.Global */
-.codehilite pre .vi { color: #008080 } /* Name.Variable.Instance */
-.codehilite pre .il { color: #945277 } /* Literal.Number.Integer.Long */</style><title>Dining Philosophers</title></head><body><article class="markdown-body"><div class="hidden"><meta property="og:image" content="http://the-dining-philosophers.github.io/code-weekend/assets/img/logo.png"><link rel="shortcut icon" href="assets/images/favicon.png"><link rel="stylesheet" href="assets/css/global.css"><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"><link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' type='text/css'></div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Dining Philosophers - Hacking &amp; Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
 
-<p><img class="full-img" src="assets/img/logo.png"><div class="nav-items"><div class="nav-item" id="cw-menu">Code Weekend</div><div class="nav-item" id="cc-menu">Code Camp</div><div class="nav-item" id="hack-menu">Hackathons</div></div></p>
-<h1 id="the-dining-philosophers"><a name="user-content-the-dining-philosophers" href="#the-dining-philosophers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The Dining Philosophers</h1>
-<h2 id="hacking-and-learning"><a name="user-content-hacking-and-learning" href="#hacking-and-learning" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hacking And Learning</h2>
-<p>The Dining Philosphers is the Unviersity of Pennsylvania&rsquo;s official Computer Science Club. This is the home of the Hacking and Learning Team on the DP that focuses on spreading practical coding education and fostering the hacker community. This website contains a lot of the resources we use to teach code and we&rsquo;re constantly working to make things better. We hope that eventually this will become a great place to find all the tools you need to pick up any skill you might need to build something real.</p>
-<blockquote>
-<p>These materials have been developed by a lot of people over time and these people are credited with their contributions along with the materials they created.</p>
-</blockquote>
-<p>Below are short descriptions on what materials we have available already and links to them. This will build up over time, so forgvie us if some of them are still works in progress.</p>
-<h1 id="code-weekend"><a name="user-content-code-weekend" href="#code-weekend" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Code Weekend <a id="cw-section"></a></h1>
-<h2 id="a-weekend-crash-course-in-building-webapps-with-nodejs"><a name="user-content-a-weekend-crash-course-in-building-webapps-with-nodejs" href="#a-weekend-crash-course-in-building-webapps-with-nodejs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>A weekend crash course in building webapps with Node.JS</h2>
-<p>The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecented interset with over 500 students singing up for the weekend&rsquo;s workshops. Split into 4 highly interactive and mentored workshops, Code Weekend taught students to build a fully functioning Node.JS app that used 3rd party APIs and a MongoDB database in just two days. Code Weekend will be coming back improved in the Spring 2015 semester with all the things we learned from the first iteration.</p>
-<p><a href="http://dinphil.github.io/code-weekend">See the full Code Weekend website here.</a></p>
-<h1 id="code-camp"><a name="user-content-code-camp" href="#code-camp" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Code Camp <a id="cc-section"></a></h1>
-<h2 id="workshops-to-build-fundamental-coding-skills"><a name="user-content-workshops-to-build-fundamental-coding-skills" href="#workshops-to-build-fundamental-coding-skills" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Workshops to build fundamental coding skills</h2>
-<p>Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get through the problems they face in this highly interactive workshop.</p>
-<p><a href="http://dinphil.github.io/code-camp">See all Code Camp Materials here.</a></p>
-<h1 id="hackathons"><a name="user-content-hackathons" href="#hackathons" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hackathons <a id="hack-section"></a></h1>
-<h2 id="quick-start-advice-at-hackathons"><a name="user-content-quick-start-advice-at-hackathons" href="#quick-start-advice-at-hackathons" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Quick start advice at hackathons</h2>
-<p>We&rsquo;re also building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. These will also involve projects tutorials that are great places to start learning new technologies whether you&rsquo;re at a hackathon or not.</p>
-<p><a href="http://dinphil.github.io/hackathons">See all hackathon guides here.</a></p>
-<div class="footer"><p>&copy; Dining Philosophers 2015. Page created by <a href="http://pvrnav.com">Pranav Vishnu Ramabhadran</a>.</div>
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Hacking &amp; Learning</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">What We Do</a>
+								<ul>
+									<li><a href="#one">Code Weekend</a></li>
+									<!-- <li><a href="#two">Code Camp Workshops</a></li>
+									<li><a href="#three">Hackathons</a></li> -->
+								</ul>
+							</li>
+							<li><a href="http://goo.gl/forms/0lg3QIwvMB" target="_blank" class="button special">Sign Up For Code Weekend 2015!</a></li>
+						</ul>
+					</nav>
+				</header>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Hacking &amp; Learning</h2>
+							<p>This site houses the resources used by the<br />
+							 Dining Philosophers to help teach code. <br/><br />
+							 Explore to your heart's content!</p>
+						</header>
+						<span class="image"><img src="images/favicon.png" alt="" /></span>
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
 
-<script src="assets/js/nav.js"></script>
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/code-weekend.png" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+									<header>
+										<h2>Code Weekend</h2>
+										<p>A weekend long series of workshops where students teach you how to build a full webapp from scratch</p>
+									</header>
+								</div>
+								<div class="4u 12u$(medium)">
+									<p>The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecedented interest with over <strong><em>500 students</em></strong> signing up for the weekend’s workshops. Split into 4 highly interactive and mentored workshops, Code Weekend teaches students to build a fully functioning Node.JS app that uses 3rd party APIs and a MongoDB database - all over the course of 2 days!</p>
+								</div>
+								<div class="4u$ 12u$(medium)">
+									<p>This Fall, Code Weekend is back and we're raring to go! Check out what we did <strong><a href="http:/dinphil.github.io/code-weekend/past/spring15/index.html" target="_blank">last time</a></strong> and sign up for the latest edition!<strong><em> No experience is required</em></strong> as we'll start right from the basics.
+										<br />
+										<br/>
+										<a href="http://goo.gl/forms/0lg3QIwvMB" target="_blank" class="button special">Sign Up For Code Weekend 2015!</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <a href="#two" class="goto-next scrolly">Next</a> -->
+				</section>
 
-<script src="assets/js/FlowType.js"></script>
+			<!-- Two -->
+				<!-- <section id="two" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Code Camps</h2>
+							<p>Workshops to build fundamental coding skills</p>
+						</header>
+						<p>Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get through the problems they face in these highly interactive workshops.
+							<br /><br />
+							Code camps are held throughout the year, and we'd love to hear from you if there's something specific you'd like to learn!</p>
+						<ul class="actions">
+							<li><a href="http://dinphil.github.io/code-camp/" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section> -->
 
-<script type="text/javascript">
-    $('.markdown-body').flowtype({
-        minimum   : 500,
-        maximum   : 1000,
-        minFont   : 16,
-        maxFont   : 65,
-        fontRatio : 40
-    });
-</script></article></body></html>
+			<!-- Three -->
+				<!-- <section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/penn-hack-fb-cover.png" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Hackathons</h2>
+							<p>Quick start advice for attending and preparing for hackathons</p>
+						</header>
+						<p>Hackthons are one of the best ways to put your skills to good use. And so, we’re also building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. These will also involve project tutorials that are great places to start learning new technologies - whether you’re at a hackathon or not.
+						<br />
+						<br />
+						We've set up a Facebook group, Penn.hack(), where you can expect the latest in hackathon news, updates and even information about transportation to nearby college hackathons!
+						</p>
+						<ul class="actions">
+							<li><a href="https://www.facebook.com/groups/672851066164250/" class="button"><i class="fa fa-facebook"></i>&nbsp;&nbsp;Join Penn.hack() on Facebook!</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section> -->
+
+			<!-- Five -->
+				<!-- container for automatic sign up to Dining Philosophers listserv -->
+				<!-- <section id="five" class="wrapper style2 special fade">
+					<div class="container">
+						<header>
+							<h2>Magna faucibus lorem diam</h2>
+							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+						</header>
+						<form method="post" action="#" class="container 50%">
+							<div class="row uniform 50%">
+								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
+							</div>
+						</form>
+					</div>
+				</section> -->
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright" style="font-size: 2em;">
+						<li>&copy; Hacking &amp; Learning | The Dining Philosophers.
+							<br/>
+							All rights reserved.
+							<br/>
+							<br/>
+							Page created and maintained by <a href="http://www.seas.upenn.edu/~deveshd" target="_blank" style="color: #e44c65">Devesh Dayal</a>
+						</li>
+						<br />
+						<br />
+						<li></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
