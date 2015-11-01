@@ -1,160 +1,399 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>The Dining Philosophers - Hacking &amp; Learning</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body class="landing">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <title>Hacking and Learning</title>
+        
+        <!--Meta-->
+        <meta charset="utf-8">
+        <meta name="description"> <!--Fill this out-->
+        <meta name="author" content="Abhinav Suri"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="image_src" href="img/logo.png" /> <!--***change this***-->
+        <meta property="og:site_name" content="School's Out Hackathon"/>
+        <meta property="og:title" content="School's Out Hackathon"/>
+        <meta property="og:image" content="//www.sohacks.com/img/logo.png"/>
+        <meta property="og:url" content="//www.sohacks.com"/>
+        <meta property="og:description" content="School's Out Hackathon. The largest high school hackathon in the nation during August 7-8,2015 in San Antonio, TX."/>
+        <!--end meta-->
+        
+        <!--css--> 
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/skeleton.css"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Hacking &amp; Learning</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">What We Do</a>
-								<ul>
-									<li><a href="#one">Code Weekend</a></li>
-									<li><a href="#two">Code Camp Workshops</a></li>
-									<!-- <li><a href="#three">Hackathons</a></li> -->
-								</ul>
-							</li>
-							<li><a href="http://dinphil.com" target="_blank" class="button special">About the Dining Philosophers</a></li>
-						</ul>
-					</nav>
-				</header>
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>Hacking &amp; Learning</h2>
-							<p>This site houses the resources used by the<br />
-							 Dining Philosophers to help teach code. <br/><br />
-							 Explore to your heart's content!</p>
-						</header>
-						<span class="image"><img src="images/favicon.png" alt="" /></span>
-					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
-				</section>
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>    
+    <body>
+        <style>
+            .slicknav_menu {
+	display:none;
+}
 
-			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/code-weekend.png" alt="" /></span>
-					<div class="content">
-						<div class="container">
-							<div class="row">
-								<div class="4u 12u$(medium)">
-									<header>
-										<h2>Code Weekend</h2>
-										<p>A weekend long series of workshops where students teach you how to build a full webapp from scratch</p>
-									</header>
-								</div>
-								<div class="4u 12u$(medium)">
-									<p>The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecedented interest with over <strong><em>500 students</em></strong> signing up for the weekend's workshops. Split into 4 highly interactive and mentored workshops, Code Weekend teaches students to build a fully functioning Node.JS app that uses 3rd party APIs and a MongoDB database - all over the course of 2 days!</p>
-								</div>
-								<div class="4u$ 12u$(medium)">
-									<p>This Fall, Code Weekend was back and we had a huge number of signups! Check out the topics we covered during the workshops <strong><a href="http:/dinphil.github.io/code-weekend/" target="_blank">online here</a></strong> and feel free to send us feedback about the event!
-										<br />
-										<br/>
-										<a href="http://dinphil.github.io/code-weekend" target="_blank" class="button special">Read the latest Code Weekend tutorials!</a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- <a href="#two" class="goto-next scrolly">Next</a> -->
-				</section>
+@media screen and (max-width: 650px) {
+	/* #menu is the original menu */
+	#nav {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+}
+        </style>
+            <nav>
+                <ul id="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#stats">Code Weekend</a></li>
+                    <li><a href="#info">Why Program?</a></li>
+                    <li><a href="#faq">Code Camps</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        <style>
+           
+        </style>
+        
+        <section id="home">
+            <div id="parallax1">
+                
+            </div>
+          
+            <div class="container"><!--Se-slope-->
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1 id="caption" style="padding-top: 150px">Hacking &amp; Learning</h1>
+                        <div class="row">
+                        <div class="four columns offset-by-four">
+                        <img src="img/favicon.png" id="logo" style="max-height: 400px; max-width:400px; margin: 0 auto"></div>   
+                            </div>
+                    
+                            
+                            </div>
+    </div>
+                        <br>
+                        <h4 style="text-align: center" id="caption3"><a href="#about" id="n2" class="button button-primary" style="font-size: 15px">Learn More About Us</a></h4>
+<div class="row">
+    <div class="twelve columns">
+        <h5>Upcoming events</h5>
+    </div>
+                        <div id="ticker" class="twelve columns">
+                            <div class="row">
+                                <div class="three columns" id="event">
+                                    <div class="row">
+                                        <div class="four columns" id="link">
+                                            <a href="#"><i class="fa fa-link fa-2x" style="color: #FFF; padding-top: 30px; padding-left: 10px"></i>
+</a>    
+                                        </div>
+                                        <div class="eight columns" id="eventinfo">
+                                            <p class="eventtitle">Waddup</p>
+                                            
+                                            <p class="eventdesc">This is a description of the event how is it going guys?</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="three columns" id="event">
+                                    <div class="row">
+                                        <div class="four columns" id="link">
+                                            <a href="#"><i class="fa fa-link fa-2x" style="color: #FFF; padding-top: 30px; padding-left: 10px"></i>
+</a>    
+                                        </div>
+                                        <div class="eight columns" id="eventinfo">
+                                            <p class="eventtitle">Waddup</p>
+                                            
+                                            <p class="eventdesc">This is a description of the event how is it going guys?</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="three columns" id="event">
+                                    <div class="row">
+                                        <div class="four columns" id="link">
+                                            <a href="#"><i class="fa fa-link fa-2x" style="color: #FFF; padding-top: 30px; padding-left: 10px"></i>
+</a>    
+                                        </div>
+                                        <div class="eight columns" id="eventinfo">
+                                            <p class="eventtitle">Waddup</p>
+                                            
+                                            <p class="eventdesc">This is a description of the event how is it going guys?</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="three columns" id="event">
+                                    <div class="row">
+                                        <div class="four columns" id="link">
+                                            <a href="#"><i class="fa fa-link fa-2x" style="color: #FFF; padding-top: 30px; padding-left: 10px"></i>
+</a>    
+                                        </div>
+                                        <div class="eight columns" id="eventinfo">
+                                            <p class="eventtitle">Waddup</p>
+                                            
+                                            <p class="eventdesc">This is a description of the event how is it going guys?</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <style>
+                                #link {
+                                    width: 50px;
+                                    background: #1EAEDB;
+                                    height: 90px
+                                    
+                                }
+                                #ticker {
+                                }
+                                #event {
+                                    color: #000;
+                                    padding:5px;
+                                    background: #FFF;
+                                    height: 100px;
+                                    width: 200px;
+                                    opacity: .6;
+                                    transition: all 0.5s ease;
+                                    overflow:scroll
+                                }
+                               
+                                 .eventtitle {
+                                     
+                                    
+                                    color: #000;
+                                    font-weight: 400;
+                                     margin-bottom: 0px;
+                                }
+                                .eventdesc {
+                                    color: #000;
+                                    font-size: 10px;
+                                }
+                                #event:hover {
+                                    opacity: 1
+                                }
+                            </style>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="slope1">
+                <div class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h1>What is Hacking &amp; Learning?</h1>
+                            <div id="t1"></div>
+                            <h5>
+                                The Hacking and Learning committee of the Dining Philosophers aims to bring about a culture of creation and innovation within the University of Pennsylvania community and beyond. By focusing on developing high quality educational initiatives and organizing several events throughout the year, we have introduced many to the world of programming and computer science. <br>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            
+                            <p id="infopara">
+                                Ever had that app, website, or machine you wanted to build but didn't know where to start? Have you ever wanted to jump into the world of programming and show off an
+                                awesome product to your friends? <b>Now is your chance.</b>
+                                The Hacking and Learning committe organizes dozens of educational initiatives during the year to help you learn how to code and develop your projects.
+                                You'll have tons of mentors and like-minded peers to help you through the process of making your dream into a reality. 
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <img src="img/info.jpg" id="infopic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stats">
+            <div id="parallax2">
+                
+            </div>
+            <div class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h1>Code Weekend </h1>
+                                
+                            <h4 style="text-align: center">A weekend long series of workshops where students teach you how to build a full webapp from scratch</h4><h5 style="text-align:center"><a href="http://dinphil.github.io/code-weekend">(Read the Latest Code Weekend Tutorials)</a></h5>
+                                                    <div id="t2"></div>
 
-			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/codecamps.png" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Code Camps</h2>
-							<p>Workshops to build fundamental coding skills</p>
-						</header>
-						<p>Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get through the problems they face in these highly interactive workshops.
-							<br /><br />
-							Code camps are held throughout the year, and we'd love to hear from you if there's something specific you'd like to learn!</p>
-						<ul class="actions">
-							<li><a href="http://dinphil.github.io/code-camp/" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
+                        </div>
+                        <div class="row">
+                                    <div class="three columns count">
+                                        <h3 style="font-weight: 500" class="count1">500</h3>
+                                        <p class="center" id="cap1">Attendees</p>
+                                    </div>
+                                    <div class="three columns count">
+                                        <h3 style="font-weight: 500" id="count2">4</h3>
+                                        <p class="center" id="cap2">Workshops</p>
+                                    </div>
+                                    <div class="three columns count">
+                                        <h3 style="font-weight: 500" id="count3">50</h3>
+                                        <p class="center" id="cap3">Mentors</p>
+                                    </div>
+                                    <div class="three columns count">
+                                            <h3 style="font-weight: 500"><span id="count4">54</span>%</h3>
+                                            <p  class="center" id="cap4">First Time Coders</p>
+                                    </div>
+                                    
+                    </div>
+                    <div class="row" id="abouttext3">
+                        <div class="twelve columns">
+                            <div class="row">
+                                
+                                <div class="eight columns offset-by-two" style="text-align:center">
+The first ever Code Weekend was held September 6th and 7th, 2014. It attracted unprecedented interest with over 500 students signing up for the weekend's workshops. Split into 4 highly interactive and mentored workshops, Code Weekend teaches students to build a fully functioning Node.JS app that uses 3rd party APIs and a MongoDB database - all over the course of 2 days!<br>
+This Fall, Code Weekend was back and we had a huge number of signups! Check out the topics we covered during the workshops online here and feel free to send us feedback about the event! 
+                                    </div>
+                        </div>
+                        </div>
+                       
+                    </div>  
+                   
+                </div>
+            </div> 
+        </section>
+        <section id="info">
+            <div class="slope2">
+                <div class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h1>Why Should I Program?</h1>
+                            <div id="t3"></div>
 
-			<!-- Three -->
-				<!-- <section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/banner.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Hackathons</h2>
-							<p>Quick start advice for attending and preparing for hackathons</p>
-						</header>
-						<p>Hackthons are one of the best ways to put your skills to good use. And so, we're also building up a directory of quick ways to pick up new skills that you can put to use at a hackathon. These will also involve project tutorials that are great places to start learning new technologies - whether you're at a hackathon or not.
-						<br />
-						<br />
-						We've set up a Facebook group, Penn.hack(), where you can expect the latest in hackathon news, updates and even information about transportation to nearby college hackathons!
-						</p>
-						<ul class="actions">
-							<li><a href="https://www.facebook.com/groups/672851066164250/" class="button"><i class="fa fa-facebook"></i>&nbsp;&nbsp;Join Penn.hack() on Facebook!</a></li>
-						</ul>
-					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
-				</section> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="eight columns" id="specdiagram">
+                            <div id="diagram"></div>
+                        </div>
+                        <div class="four columns">
+                            <blockquote>
+                                 <p style="opacity: .8">I think everyone should learn how to program a computer, because it teaches you how to think.<br><span style="float: right">- Steve Jobs</span></p>
+                               </blockquote>
+                            <p>
+                              The power of computer science in a growing, tech based job market is undeniable. Thousands of college students each year are chosing STEM and programming related degrees to help them make their own apps and products or join companies in profitable software engineering jobs. Why not start learning now?
+                            </p>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq">
+            <div class="slope3">
+                <div id="parallax3">
+                    
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="twelve columns">
+                            <h1>Code Camps </h1>
+                                
+                            <h4 style="text-align: center">Workshops to build fundamental coding skills </h4>
+                        <div id="t3"></div>
 
-			<!-- Five -->
-				<!-- container for automatic sign up to Dining Philosophers listserv -->
-				<!-- <section id="five" class="wrapper style2 special fade">
-					<div class="container">
-						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
-						</header>
-						<form method="post" action="#" class="container 50%">
-							<div class="row uniform 50%">
-								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
-							</div>
-						</form>
-					</div>
-				</section> -->
+                        </div>
+                        
+                    <div class="row" id="abouttext3">
+                        <div class="twelve columns">
+                            <div class="row">
+                                
+                                <div class="eight columns offset-by-two" style="text-align:center">
+Code Camp is a workshop series designed to teach from scratch, basic tools and skills that all real-world programmers need. Mentors are around to help students get through the problems they face in these highly interactive workshops. 
+<br><br>
+Code camps are held throughout the year, and we'd love to hear from you if there's something specific you'd like to learn!
+                                    </div>
+                        </div>
+                        </div>
+                       
+                    </div>  
+                   
+                </div>     
+                        
+                        
+                </div>
+            </div> 
+        </section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="copyright" style="font-size: 1.8em;">
-						<li>&copy; Hacking &amp; Learning | The Dining Philosophers.
-							<br/>
-							All rights reserved.
-							<br/>
-							<br/>
-							Page created and maintained by <a href="http://www.seas.upenn.edu/~deveshd" target="_blank" style="color: #e44c65">Devesh Dayal</a>
-						</li>
-						<br />
-						<br />
-						<li></li>
-					</ul>
-				</footer>
+        
+        
+        <section id="contact">
+            <div class="slope5">
+                <div class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h1>Contact Us</h1>
+                                <div id="t2"></div>
 
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                            <h3>Email us at blah@blah.com</h3>
+                            <p style="text-align:center">We would be happy to respond to any requests, sponsorship questions, or general queries. Don't hesitate to reach out!</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <p style="text-align:center;margin-bottom: 0px;">Site made by Abhinav Suri (c) 2015</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <!--js-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/raphael.js"></script>
+	   <link rel="stylesheet" href="//sohacks.com/css/slicknav.css" />
+		<script src="//sohacks.com/js/jquery.slicknav.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/KineticPlugin.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="//flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/modernizer.custom.js"></script>
+    <!--end js-->
+                        <div class="get">
+                        <div class="arc">
+                            <span class="text">Less than 4.9 percent of students graduate with a degree in computer science</span>
+                            <input type="hidden" class="percent" value="4.9" />
+                            <input type="hidden" class="color" value="#2c3e50" />
+                        </div>
+                        <div class="arc">
+                            <span class="text">Only 28% of computing jobs are filled. By 2020 over 1 million jobs will be unmet.</span>
+                            <input type="hidden" class="percent" value="28" />
+                            <input type="hidden" class="color" value="#9b59b6" />
+                        </div>
+                        <div class="arc">
+                            <span class="text">Only 50% of states give credit for computer science classes.</span>
+                            <input type="hidden" class="percent" value="50" />
+                            <input type="hidden" class="color" value="#3498db" />
+                        </div>
+                        <div class="arc">
+                            <span class="text">Computer Science jobs account for 60% of the STEM job-industry</span>
+                            <input type="hidden" class="percent" value="60" />
+                            <input type="hidden" class="color" value="#2ecc71" />
+                        </div>
+                        <div class="arc">
+                            <span class="text">90% of United States high schools do not have an introductory computer science curriculum</span>
+                            <input type="hidden" class="percent" value="90" />
+                            <input type="hidden" class="color" value="#e74c3c" />
+                        </div>
+                        
 </html>
