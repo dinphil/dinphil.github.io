@@ -8,12 +8,7 @@
         <meta name="description"> <!--Fill this out-->
         <meta name="author" content="Abhinav Suri"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link rel="image_src" href="img/logo.png" /> <!--***change this***-->
-        <meta property="og:site_name" content="School's Out Hackathon"/>
-        <meta property="og:title" content="School's Out Hackathon"/>
-        <meta property="og:image" content="//www.sohacks.com/img/logo.png"/>
-        <meta property="og:url" content="//www.sohacks.com"/>
-        <meta property="og:description" content="School's Out Hackathon. The largest high school hackathon in the nation during August 7-8,2015 in San Antonio, TX."/>
+      
         <!--end meta-->
         
         <!--css--> 
@@ -30,20 +25,7 @@
 </head>    
     <body>
         <style>
-            .slicknav_menu {
-	display:none;
-}
 
-@media screen and (max-width: 650px) {
-	/* #menu is the original menu */
-	#nav {
-		display:none;
-	}
-	
-	.slicknav_menu {
-		display:block;
-	}
-}
         </style>
             <nav>
                 <ul id="nav">
@@ -397,11 +379,10 @@ Code camps are held throughout the year, and we'd love to hear from you if there
     <!--js-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/raphael.js"></script>
-	   <link rel="stylesheet" href="//sohacks.com/css/slicknav.css" />
-		<script src="//sohacks.com/js/jquery.slicknav.js"></script>
+	   <link rel="stylesheet" href="css/slicknav.css" />
+		<script src="js/jquery.slicknav.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/KineticPlugin.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
    
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
@@ -436,8 +417,8 @@ Code camps are held throughout the year, and we'd love to hear from you if there
                             <input type="hidden" class="percent" value="90" />
                             <input type="hidden" class="color" value="#e74c3c" />
                         </div>
-    <script>
-            $("#modal").click(function(e) {
+<script>
+     $("#modal").click(function(e) {
                 
                 if(e.target.id == 'close-modal') {
                     $("#modal").fadeOut("slow");
@@ -470,27 +451,31 @@ Code camps are held throughout the year, and we'd love to hear from you if there
 
                 return '<div id="event"><div class="row"><div class="four columns" id="link"><div id="link"><a style="display:block" href="'+linknew+'"><i class="fa fa-link fa-3x" style="color: #FFF; padding-top: 12px; padding-left: 8px"></i></a></div><div id="info-event"><a style="display:block" id="triggerInfoModal" onClick="triggerInfoModal(\''+titlenew+'\',\''+descnew+'\',\''+datenew+'\',\''+linknew+'\')"><i class="fa fa-info-circle fa-3x" style="color: #FFF; padding-top: 10px; padding-left: 10px"></i></a></div></div><div class="eight columns" id="eventinfo"><div class="eventdesc"><div class="eventtitle">'+titlenew+'</div>  <div class="eventdate">'+datenew+'</div><div class="eventinfo">'+descnew+'</div></div></div></div></div>'
             }
-            $.get( "https://spreadsheets.google.com/feeds/list/1_rMloOOAebLFDK6kYo7VD_0TU_glzoVq2hbpaHtYwXQ/od6/public/basic?alt=json", function(data) {
-                console.log(data);
-            
+            $.get(
+                 "https://spreadsheets.google.com/feeds/list/1_rMloOOAebLFDK6kYo7VD_0TU_glzoVq2hbpaHtYwXQ/od6/public/basic?alt=json", function(data) {
+            console.log(data);
             for(var i = 0; i < data.feed.entry.length; i++) {
                 
-                
-                var separators = ['eventname: ',', facebookeventlink: ', ', shortdescription: ', ", committee"];
-                
+                 var separators = ['eventname: ',', facebookeventlinkputnaifnone: ', ', shortdescriptionputnaifnone: ', ", committee"];
                 var time = data.feed.entry[i].title.$t;
                 var preprocess = data.feed.entry[i].content.$t;
                 var final = preprocess.split(new RegExp(separators.join('|'),'g'));
                 var title = final[1];
-                var link = final[2];
-                var desc = final[3];
-                console.log("test");
+                if(final[2] != 'N/A') {
+                    var link = final[2];
+                } else {
+                    var link = "";
+                }
+                if(final[3] != 'N/A') {
+                    var desc = final[3];
+                } else {
+                    var desc = "";
+                }
                 $("#containticker").append(appendEvent(title,link,desc,time));
-                console.log(appendEvent(title,link,desc,time));
             }
                 
             }, "json" 
             );
-        </script>
+</script>
                         
 </html>

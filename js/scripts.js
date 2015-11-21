@@ -1,34 +1,10 @@
-
- $(document).ready(function()
-    {        $.localScroll({
-           target:'body',
+$(document).ready(function()
+    {        
+    
+    $.localScroll({
+        target:'body',
         offset: -50,
-        
-        });
-
-// $(window).resize(function() {
-//     $('#hack').videoBG({
-//	mp4:'js/tunnel_animation.mp4',
-//	ogv:'js/tunnel_animation.ogv',
-//	webm:'js/tunnel_animation.webm',
-//	scale:true,
-//     height: 1000
-//     
-//}).resize();
-// });
-    });
-
-
-
-/* 
- * Lazy Line Painter - Path Object 
- * Generated using 'SVG to Lazy Line Converter'
- * 
- * http://lazylinepainter.info 
- * Copyright 2013, Cam O'Connell  
- *  
- */ 
- 
+    })});
 
 $(function(){
 		$('#nav').slicknav({
@@ -151,28 +127,6 @@ else {
 /*DONE*/
 
 
-var data1 = {
-  labels: ["Web", "Hardware", "Windows App", "Android", "iOS", "Desktop" ],
-  datasets: [{
-    fillColor: "transparent",
-    strokeColor: "#FFF",
-    pointColor: "#123",
-    pointStrokeColor: "#FFF",
-    data: [16, 8, 12, 16,15,13]
-  }]
-}
-
-var options1 = {
-  scaleFontColor: "#FFF",
-  scaleLineColor: "#FFF",
-  scaleGridLineColor: "transparent",
-  bezierCurve: false,
-  scaleOverride: true,
-  scaleSteps: 2,
-  scaleStepWidth: 10,
-  scaleStartValue: 0
-}
-
     var t1 = new TimelineMax();
     t1.from("#t2", .5, {width: 0})
         .staggerFrom(".count", .5, {opacity: 0, top: "10px", color: "#F79E21"},.2);
@@ -192,15 +146,17 @@ var controller2 = new ScrollMagic.Controller();
     var sceneinit = new ScrollMagic.Scene({triggerElement: "#caption", duration: 0})
         .setTween(t4)
         .addTo(controller);
+if (window.innerWidth>650) {
 	var bg = new ScrollMagic.Scene({
           triggerElement: "#home", // point of execution
-          duration: $(window).height() + 200, // pin element for the window height - 1
+          duration: $(window).height(), // pin element for the window height - 1
           triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
           reverse: true // allows the effect to trigger when scrolled in the reverse direction
         })
         .setPin("#parallax1")
         
         .addTo(controller);
+
     var bg2 = new ScrollMagic.Scene({
           triggerElement: "#stats", // point of execution
           duration: 500, // pin element for the window height - 1
@@ -244,4 +200,4 @@ var scene3 = new ScrollMagic.Scene({triggerElement: "#faqtrig", duration: 0})
                     .addTo(controller);
 
 
-
+}
