@@ -22,7 +22,10 @@ nav {
             .slicknav_menu {
 	display:none;
 }
-
+button {
+    padding-top: 5px !important;
+    padding-bottom: 5px;
+}
 @media screen and (max-width: 650px) {
 	/* #menu is the original menu */
 	#nav {
