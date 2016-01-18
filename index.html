@@ -458,22 +458,22 @@ Code camps are held throughout the year, and we'd love to hear from you if there
 
                 return '<div id="event"><div class="row"><div class="four columns" id="link"><div id="link"><a style="display:block" href="'+linknew+'"><i class="fa fa-link fa-3x" style="color: #FFF; padding-top: 12px; padding-left: 8px"></i></a></div><div id="info-event"><a style="display:block" id="triggerInfoModal" onClick="triggerInfoModal(\''+titlenew+'\',\''+descnew+'\',\''+datenew+'\',\''+linknew+'\')"><i class="fa fa-info-circle fa-3x" style="color: #FFF; padding-top: 10px; padding-left: 10px"></i></a></div></div><div class="eight columns" id="eventinfo"><div class="eventdesc"><div class="eventtitle">'+titlenew+'</div>  <div class="eventdate">'+datenew+'</div><div class="eventinfo">'+descnew+'</div></div></div></div></div>'
             }
-           if(Math.floor(Date.now()/1000) < 1453080264 ) { 
-            swal({
-                title:"Code Weekend 2016", 
-                text: "The hugely popular Code Weekend is back! Interested in learning the basics of website design and code? Join us for a series of workshops that will guide you through the process of making a full web app!",
-                html: true,
-                showCancelButton: true,
-                closeOnCancel: true,
-                confirmButtonText: "Go to Signup",
-                cancelButtonText: "Close"
-            },
-            function(isConfirm) {
-              if(isConfirm) {
-                  location.href = 'https://docs.google.com/forms/d/1PzownC3wvz03TEvIxZz7H3MZEbvoz-Ml_cy03KO-zuk/viewform?c=0&w=1'
-              }
-            });
-           }
+           // if(Math.floor(Date.now()/1000) < 1453080264 ) { 
+           //  swal({
+           //      title:"Code Weekend 2016", 
+           //      text: "The hugely popular Code Weekend is back! Interested in learning the basics of website design and code? Join us for a series of workshops that will guide you through the process of making a full web app!",
+           //      html: true,
+           //      showCancelButton: true,
+           //      closeOnCancel: true,
+           //      confirmButtonText: "Go to Signup",
+           //      cancelButtonText: "Close"
+           //  },
+           //  function(isConfirm) {
+           //    if(isConfirm) {
+           //        location.href = 'https://docs.google.com/forms/d/1PzownC3wvz03TEvIxZz7H3MZEbvoz-Ml_cy03KO-zuk/viewform?c=0&w=1'
+           //    }
+           //  });
+           // }
             $.get(
                  "https://spreadsheets.google.com/feeds/list/1_rMloOOAebLFDK6kYo7VD_0TU_glzoVq2hbpaHtYwXQ/od6/public/basic?alt=json", function(data) {
             console.log(data);
